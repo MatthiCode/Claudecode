@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FREIZ — Compotes énergisantes sans sucres ajoutés</title>
+  <meta name="description" content="FREIZ, la compote énergisante en gourde pour ton sport du week-end. Sans sucres ajoutés, 5 parfums, prête en 3 secondes. Pack découverte -20 %.">
+  <meta name="theme-color" content="#1c3512">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat+Brush&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Bandeau promo -->
+  <div class="promo-bar">
+    🚚 Livraison offerte dès 25 € · <strong>-20 % sur le pack découverte</strong> avec le code <strong>DIMANCHE</strong>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a href="#top" class="logo" aria-label="FREIZ — accueil">
+        <svg class="logo__bottle" viewBox="0 0 28 48" aria-hidden="true"><rect x="9" y="0" width="10" height="7" rx="1.5"/><path d="M5 9h18l3 6v30a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V15z"/></svg>
+        <span class="logo__word">FR<span class="logo__e" aria-hidden="true"><i></i><i></i><i></i></span><span class="sr-only">E</span>IZ</span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#pourquoi">Pourquoi FREIZ</a>
+        <a href="#parfums">Parfums</a>
+        <a href="#packs">Packs</a>
+        <a href="#avis">Avis</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="header__actions">
+        <a href="#packs" class="btn btn--small btn--light hide-sm">Commander</a>
+        <button class="cart-btn" id="cartOpen" aria-label="Ouvrir le panier">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+          <span class="cart-btn__count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__rays" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">⚡ Le boost des sportifs du dimanche</p>
+          <h1 class="hero__title">Ton coup de mou<br>s'arrête <span class="hl">ici.</span></h1>
+          <p class="hero__lead">
+            La compote énergisante en gourde qui tient dans ta poche de short.
+            Des vrais fruits, <strong>zéro sucre ajouté</strong>, et l'énergie qu'il faut pour finir ta sortie
+            — sans barre chimique ni gel écœurant.
+          </p>
+          <div class="hero__ctas">
+            <a href="#packs" class="btn btn--primary btn--lg">Je teste le pack découverte — 15,90 €</a>
+            <a href="#parfums" class="btn btn--ghost btn--lg">Voir les 5 parfums</a>
+          </div>
+          <ul class="hero__trust">
+            <li><span class="stars">★★★★★</span> 4,8/5 · 1 200+ avis</li>
+            <li>✔ Satisfait ou remboursé 30 j</li>
+            <li>✔ Expédié en 24 h</li>
+          </ul>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__halo"></div>
+          <div class="pouch-fan" id="heroFan"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bande arguments -->
+    <section class="ticker" aria-label="Points forts">
+      <div class="ticker__track">
+        <span>Sans sucres ajoutés</span><span>★</span>
+        <span>100 % fruits</span><span>★</span>
+        <span>Fabriqué en France</span><span>★</span>
+        <span>Gourde 90 g · se glisse partout</span><span>★</span>
+        <span>Vegan</span><span>★</span>
+        <span>Sans sucres ajoutés</span><span>★</span>
+        <span>100 % fruits</span><span>★</span>
+        <span>Fabriqué en France</span><span>★</span>
+        <span>Gourde 90 g · se glisse partout</span><span>★</span>
+        <span>Vegan</span><span>★</span>
+      </div>
+    </section>
+
+    <!-- PROBLÈME / SOLUTION -->
+    <section class="section section--cream" id="pourquoi">
+      <div class="container">
+        <p class="eyebrow eyebrow--dark">Tu te reconnais ?</p>
+        <h2 class="section__title section__title--dark">Le dimanche, t'es pas pro.<br>Mais t'as le droit d'être en forme.</h2>
+        <div class="pain-grid">
+          <div class="pain">
+            <span class="pain__emoji">🥵</span>
+            <p>Le <strong>mur au km 8</strong> de ton footing, quand les jambes ne suivent plus.</p>
+          </div>
+          <div class="pain">
+            <span class="pain__emoji">🍫</span>
+            <p>Les <strong>barres « énergie »</strong> bourrées de sucre et d'ingrédients imprononçables.</p>
+          </div>
+          <div class="pain">
+            <span class="pain__emoji">🤢</span>
+            <p>Les <strong>gels de pro</strong> au goût de colle, trop chers pour une sortie vélo entre potes.</p>
+          </div>
+        </div>
+
+        <div class="solution">
+          <div class="solution__visual" id="solutionPouch" aria-hidden="true"></div>
+          <div class="solution__copy">
+            <h3 class="solution__title">FREIZ, c'est l'énergie simple.</h3>
+            <ul class="benefits">
+              <li>
+                <span class="benefits__icon">🍎</span>
+                <div><strong>Des vrais fruits, rien d'autre.</strong><br>Leurs sucres naturels donnent de l'énergie rapidement disponible, sans sucre ajouté.</div>
+              </li>
+              <li>
+                <span class="benefits__icon">🎒</span>
+                <div><strong>Zéro prise de tête.</strong><br>Pas de cuillère, pas de frigo. Tu dévisses, tu bois, c'est reparti.</div>
+              </li>
+              <li>
+                <span class="benefits__icon">😋</span>
+                <div><strong>Un goût de goûter.</strong><br>Pomme, miel, fraise, spéculos, barbe à papa : on a gardé le plaisir.</div>
+              </li>
+              <li>
+                <span class="benefits__icon">💸</span>
+                <div><strong>Prix de copain.</strong><br>À partir de 1,49 € la gourde — moins cher qu'un gel de marque.</div>
+              </li>
+            </ul>
+            <a href="#packs" class="btn btn--primary">Je fais le plein d'énergie</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODE D'EMPLOI -->
+    <section class="section section--green">
+      <div class="container">
+        <p class="eyebrow">Mode d'emploi</p>
+        <h2 class="section__title">Une gourde, trois moments.</h2>
+        <div class="steps">
+          <div class="step">
+            <span class="step__num">01</span>
+            <h3>Avant</h3>
+            <p>20 min avant le départ, pour partir le réservoir plein sans te sentir lourd.</p>
+          </div>
+          <div class="step">
+            <span class="step__num">02</span>
+            <h3>Pendant</h3>
+            <p>Dès que tu sens le coup de barre arriver. Toutes les 45 min sur une longue sortie.</p>
+          </div>
+          <div class="step">
+            <span class="step__num">03</span>
+            <h3>Après</h3>
+            <p>Au frais avec un grand verre d'eau, pour récupérer en douceur avant l'apéro.</p>
+          </div>
+        </div>
+        <div class="sports">
+          <span>🏃 Running</span><span>🚴 Vélo</span><span>🎾 Padel</span><span>🥾 Rando</span><span>🏊 Natation</span><span>⚽ Foot du dimanche</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARFUMS -->
+    <section class="section section--dark" id="parfums">
+      <div class="container">
+        <p class="eyebrow">La gamme</p>
+        <h2 class="section__title">Choisis ton carburant.</h2>
+        <p class="section__lead">5 parfums. Tous sans sucres ajoutés. Tous dévorables.</p>
+        <div class="flavors" id="flavors"></div>
+      </div>
+    </section>
+
+    <!-- PACKS -->
+    <section class="section section--cream" id="packs">
+      <div class="container">
+        <p class="eyebrow eyebrow--dark">Commande en 1 clic</p>
+        <h2 class="section__title section__title--dark">Plus t'en prends, moins tu paies.</h2>
+        <div class="packs">
+          <article class="pack">
+            <h3 class="pack__name">Pack Découverte</h3>
+            <p class="pack__desc">10 gourdes · les 5 parfums</p>
+            <div class="pack__price"><span class="pack__old">19,90 €</span> <span class="pack__now">15,90 €</span></div>
+            <p class="pack__unit">soit 1,59 € la gourde</p>
+            <ul class="pack__list">
+              <li>✔ 2 gourdes de chaque parfum</li>
+              <li>✔ Idéal pour trouver ton préféré</li>
+              <li>✔ Satisfait ou remboursé</li>
+            </ul>
+            <button class="btn btn--dark btn--block" data-add="pack-decouverte">Ajouter au panier</button>
+          </article>
+
+          <article class="pack pack--featured">
+            <span class="pack__badge">🔥 Le + choisi</span>
+            <h3 class="pack__name">Pack Saison</h3>
+            <p class="pack__desc">24 gourdes · au choix</p>
+            <div class="pack__price"><span class="pack__old">47,80 €</span> <span class="pack__now">35,90 €</span></div>
+            <p class="pack__unit">soit 1,49 € la gourde · <strong>-25 %</strong></p>
+            <ul class="pack__list">
+              <li>✔ 6 semaines de sorties couvertes</li>
+              <li>✔ Livraison offerte</li>
+              <li>✔ Une gourde bonus offerte</li>
+            </ul>
+            <button class="btn btn--primary btn--block" data-add="pack-saison">Ajouter au panier</button>
+          </article>
+
+          <article class="pack">
+            <h3 class="pack__name">Abonnement Club</h3>
+            <p class="pack__desc">12 gourdes / mois · sans engagement</p>
+            <div class="pack__price"><span class="pack__old">23,90 €</span> <span class="pack__now">17,90 €</span></div>
+            <p class="pack__unit">par mois · soit 1,49 € la gourde</p>
+            <ul class="pack__list">
+              <li>✔ Livraison offerte, chaque mois</li>
+              <li>✔ Change tes parfums quand tu veux</li>
+              <li>✔ Pause ou arrêt en 1 clic</li>
+            </ul>
+            <button class="btn btn--dark btn--block" data-add="abonnement-club">M'abonner</button>
+          </article>
+        </div>
+        <ul class="reassurance">
+          <li><span>🔒</span>Paiement 100 % sécurisé</li>
+          <li><span>🚚</span>Expédié sous 24 h</li>
+          <li><span>↩️</span>Satisfait ou remboursé 30 jours</li>
+          <li><span>🇫🇷</span>Fabriqué en France</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- AVIS — À REMPLACER par de vrais avis clients avant la mise en ligne -->
+    <section class="section section--green" id="avis">
+      <div class="container">
+        <p class="eyebrow">Ils ont testé</p>
+        <h2 class="section__title">Validé par les héros du dimanche.</h2>
+        <div class="reviews">
+          <figure class="review">
+            <div class="stars">★★★★★</div>
+            <blockquote>« Mon premier semi sans exploser au 15e km. La pomme est une tuerie, je n'en pars plus sans. »</blockquote>
+            <figcaption><strong>Julien, 38 ans</strong> · Running</figcaption>
+          </figure>
+          <figure class="review">
+            <div class="stars">★★★★★</div>
+            <blockquote>« Enfin un truc qui a le goût d'un goûter et pas d'un médicament. La spéculos dans le maillot de vélo, c'est la vie. »</blockquote>
+            <figcaption><strong>Camille, 31 ans</strong> · Vélo</figcaption>
+          </figure>
+          <figure class="review">
+            <div class="stars">★★★★★</div>
+            <blockquote>« Mes enfants me les piquent pour le foot. J'ai pris l'abonnement, comme ça plus de dispute. »</blockquote>
+            <figcaption><strong>Karim, 44 ans</strong> · Padel</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--cream" id="faq">
+      <div class="container container--narrow">
+        <p class="eyebrow eyebrow--dark">Questions fréquentes</p>
+        <h2 class="section__title section__title--dark">On te dit tout.</h2>
+        <div class="faq">
+          <details>
+            <summary>C'est vraiment sans sucres ajoutés ?</summary>
+            <p>Oui. Le seul sucre présent est celui naturellement contenu dans les fruits. Aucun sucre, sirop ou édulcorant n'est ajouté.</p>
+          </details>
+          <details>
+            <summary>Je ne suis pas un athlète, c'est pour moi ?</summary>
+            <p>C'est justement pour toi. FREIZ est pensé pour le footing du dimanche, la balade à vélo, le padel entre potes ou la rando en famille. Pas besoin d'un dossard pour avoir besoin d'énergie.</p>
+          </details>
+          <details>
+            <summary>Ça se conserve combien de temps ?</summary>
+            <p>Plusieurs mois à température ambiante, sans frigo. Une fois ouverte, on la boit dans la journée (pas compliqué, elle est bonne).</p>
+          </details>
+          <details>
+            <summary>Et si je n'aime pas ?</summary>
+            <p>On te rembourse. Tu as 30 jours pour nous écrire, sans justification.</p>
+          </details>
+          <details>
+            <summary>Je peux résilier l'abonnement quand je veux ?</summary>
+            <p>Oui, sans engagement. Tu mets en pause, changes tes parfums ou arrêtes en un clic depuis ton espace client.</p>
+          </details>
+          <details>
+            <summary>Quels sont les délais de livraison ?</summary>
+            <p>Commande expédiée sous 24 h ouvrées, livrée en 2 à 3 jours en France métropolitaine. Livraison offerte dès 25 €.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="final-cta">
+      <div class="hero__rays" aria-hidden="true"></div>
+      <div class="container final-cta__inner">
+        <h2 class="final-cta__title">Dimanche prochain,<br>c'est toi qui mènes le groupe.</h2>
+        <p>-20 % sur ton premier pack avec le code <strong>DIMANCHE</strong>.</p>
+        <a href="#packs" class="btn btn--primary btn--lg">Je commande mon pack</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="logo logo--small" aria-label="FREIZ">
+        <svg class="logo__bottle" viewBox="0 0 28 48" aria-hidden="true"><rect x="9" y="0" width="10" height="7" rx="1.5"/><path d="M5 9h18l3 6v30a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V15z"/></svg>
+        <span class="logo__word">FR<span class="logo__e" aria-hidden="true"><i></i><i></i><i></i></span><span class="sr-only">E</span>IZ</span>
+      </a>
+      <nav class="footer__links">
+        <a href="#">Mentions légales</a>
+        <a href="#">CGV</a>
+        <a href="#">Contact</a>
+        <a href="#">Instagram</a>
+      </nav>
+      <p class="footer__copy">© 2026 FREIZ · Compotes énergisantes sans sucres ajoutés</p>
+    </div>
+  </footer>
+
+  <!-- CTA collant mobile -->
+  <div class="sticky-cta" id="stickyCta">
+    <div>
+      <strong>Pack découverte</strong>
+      <span><s>19,90 €</s> 15,90 €</span>
+    </div>
+    <button class="btn btn--primary" data-add="pack-decouverte">Ajouter</button>
+  </div>
+
+  <!-- Panier -->
+  <div class="cart-overlay" id="cartOverlay" hidden></div>
+  <aside class="cart" id="cart" aria-label="Panier" aria-hidden="true">
+    <div class="cart__head">
+      <h2>Ton panier</h2>
+      <button class="cart__close" id="cartClose" aria-label="Fermer le panier">✕</button>
+    </div>
+    <div class="cart__shipping" id="cartShipping"></div>
+    <ul class="cart__items" id="cartItems"></ul>
+    <div class="cart__foot">
+      <div class="cart__total"><span>Total</span><strong id="cartTotal">0,00 €</strong></div>
+      <button class="btn btn--primary btn--block" id="checkout">Passer commande</button>
+      <p class="cart__note">🔒 Paiement sécurisé · Satisfait ou remboursé 30 j</p>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
