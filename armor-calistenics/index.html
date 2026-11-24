@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Armor Calistenics · Collectif de callisthénie à Lannion</title>
-  <meta name="description" content="Armor Calistenics, collectif de callisthénie en plein air à Lannion, en Côtes d'Armor. Force, équilibre et simplicité, pour tous les niveaux.">
+  <meta name="description" content="Armor Calistenics, collectif de callisthénie en plein air à Lannion, en Côtes d'Armor. Fondé par Matthieu Bayle et Antoine Gaborel.">
   <meta name="theme-color" content="#242424">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,166 +14,133 @@
 <body>
   <a class="skip" href="#contenu">Aller au contenu</a>
 
-  <header class="site-header">
-    <div class="wrap header-in">
-      <a class="logo" href="#accueil" aria-label="Armor Calistenics, accueil">
-        <span>ARMOR</span>
-        <span>CALIST<i class="e" aria-hidden="true"><b></b><b></b><b></b></i>NICS</span>
-      </a>
-      <button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
-      <nav id="menu" class="menu" aria-label="Navigation principale">
-        <a href="#collectif">Le collectif</a>
-        <a href="#pratique">La pratique</a>
-        <a href="#logo">L'identité</a>
-        <a href="#seances">Les séances</a>
+  <!-- Barre de navigation latérale -->
+  <aside class="sidebar">
+    <a class="logo" href="#accueil" aria-label="Armor Calistenics, accueil">
+      <span>ARMOR</span>
+      <span>CALIST<i class="e" aria-hidden="true"><b></b><b></b><b></b></i>NICS</span>
+    </a>
+    <button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+    <nav id="menu" class="menu" aria-label="Navigation principale">
+      <a href="#accueil">Accueil</a>
+      <a href="#discipline">La callisthénie</a>
+      <a href="#histoire">Qui sommes-nous</a>
+      <a href="#rejoindre">Nous rejoindre</a>
+      <a class="btn" href="#rejoindre">Rejoindre le collectif</a>
+    </nav>
+    <p class="side-foot">Lannion<br>Côtes d'Armor</p>
+  </aside>
+
+  <div class="page">
+    <!-- HEADER : photo + nom -->
+    <header id="accueil" class="hero">
+      <div class="hero-photo" role="img" aria-label="Athlète en planche parfaite sur des parallettes"></div>
+      <div class="hero-in">
+        <p class="kicker">Collectif de callisthénie · Lannion</p>
+        <h1 class="hero-name"><span>ARMOR</span><span>CALIST<i class="e" aria-hidden="true"><b></b><b></b><b></b></i>NICS</span></h1>
+        <p class="lead">S'entraîner dehors, ensemble, pour tous les niveaux.</p>
         <a class="btn" href="#rejoindre">Rejoindre le collectif</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="contenu">
-
-    <!-- HERO -->
-    <section id="accueil" class="hero dark">
-      <div class="wrap hero-in">
-        <div class="hero-text">
-          <p class="kicker">Lannion · Côtes d'Armor</p>
-          <h1>La callisthénie, côté Armor</h1>
-          <p class="lead">Collectif de callisthénie en plein air à Lannion, pour tous les niveaux.</p>
-          <a class="btn" href="#rejoindre">Rejoindre le collectif</a>
-        </div>
-        <div class="hero-visual" aria-hidden="true">
-          <svg class="symbol" viewBox="0 0 180 80" role="img" focusable="false">
-            <path d="M8 34 L42 7 H156 L172 31 H100"/>
-            <path d="M100 31 L58 53 H116"/>
-            <path d="M38 72 H156"/>
-          </svg>
-          <div class="bars"><span></span><span></span><span></span><span></span><span></span></div>
-        </div>
       </div>
       <div class="slashes" aria-hidden="true"></div>
-    </section>
+    </header>
 
-    <!-- COLLECTIF -->
-    <section id="collectif" class="light">
-      <div class="wrap">
-        <header class="section-head">
-          <h2>Un collectif, une armure</h2>
-          <p class="sub">Le nom raconte d'où l'on vient et ce que l'on pratique.</p>
-        </header>
-        <dl class="name-grid">
-          <div>
-            <dt>Les côtes d'Armor</dt>
-            <dd>Le collectif représente son territoire, la côte nord de la Bretagne, et s'y entraîne en plein air.</dd>
-          </div>
-          <div>
-            <dt>Armor et armure</dt>
-            <dd>Un jeu de mots entre Armor et armure : se construire un corps solide, un entraînement à la fois.</dd>
-          </div>
-          <div>
-            <dt>Le E breton</dt>
-            <dd>Le E de Calistenics est dessiné en trois barres, un clin d'oeil à la Bretagne et aux barres de traction.</dd>
-          </div>
-          <div>
-            <dt>La discipline</dt>
-            <dd>La callisthénie : travailler avec le poids du corps, sans machine, avec de la rigueur et du plaisir.</dd>
-          </div>
-        </dl>
-      </div>
-    </section>
+    <main id="contenu">
 
-    <!-- PRATIQUE -->
-    <section id="pratique" class="dark">
-      <div class="wrap">
-        <header class="section-head">
-          <h2>Ce qu'on travaille</h2>
-          <p class="sub">Des bases solides jusqu'aux figures de force.</p>
-        </header>
-        <p class="ladder-note">Chaque barre s'allonge avec la difficulté. On avance à son rythme.</p>
-        <ul class="ladder">
-          <li style="--w:42%"><span class="bar"></span><div><h3>Pompes et tractions</h3><p>Les bases, pour construire la force de poussée et de tirage.</p></div></li>
-          <li style="--w:56%"><span class="bar"></span><div><h3>Gainage et jambes</h3><p>Un tronc stable et des appuis solides pour tout le reste.</p></div></li>
-          <li style="--w:70%"><span class="bar"></span><div><h3>Équilibres</h3><p>L-sit, équilibre sur les mains, contrôle du corps.</p></div></li>
-          <li style="--w:84%"><span class="bar"></span><div><h3>Muscle-up et dips</h3><p>La force explosive aux barres et aux parallettes.</p></div></li>
-          <li style="--w:100%"><span class="bar"></span><div><h3>Planche</h3><p>La figure emblème du collectif, corps complètement droit.</p></div></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- LOGO / IDENTITE -->
-    <section id="logo" class="light">
-      <div class="wrap logo-grid">
-        <div>
+      <!-- SECTION 1 : LA DISCIPLINE -->
+      <section id="discipline" class="light">
+        <div class="wrap">
           <header class="section-head">
-            <h2>Une planche parfaite</h2>
-            <p class="sub">Le logo dessine la figure que l'on vise.</p>
+            <h2>La callisthénie</h2>
+            <p class="sub">Se muscler avec le poids du corps, sans machine.</p>
           </header>
-          <ul class="angles">
-            <li><strong>45 degrés</strong><span>pour les bras</span></li>
-            <li><strong>30 degrés</strong><span>pour le pied incliné</span></li>
-            <li><strong>Droit</strong><span>pour le corps, de la tête aux pieds</span></li>
+          <div class="disc-grid">
+            <div class="disc-text">
+              <p>La callisthénie est une discipline de force et de contrôle. On s'entraîne aux barres et aux parallettes, en extérieur, avec pour seul matériel son propre corps.</p>
+              <p>Pompes, tractions, gainage, équilibres : chaque mouvement se travaille par étapes, de la base jusqu'aux figures de force comme le muscle-up ou la planche.</p>
+              <p>Elle s'adresse à tous. On progresse à son rythme, avec de la rigueur et du plaisir.</p>
+            </div>
+            <div class="disc-plank">
+              <svg class="symbol" viewBox="0 0 180 80" aria-hidden="true" focusable="false">
+                <path d="M8 34 L42 7 H156 L172 31 H100"/>
+                <path d="M100 31 L58 53 H116"/>
+                <path d="M38 72 H156"/>
+              </svg>
+              <ul class="angles">
+                <li><strong>45 degrés</strong><span>pour les bras</span></li>
+                <li><strong>30 degrés</strong><span>pour le pied incliné</span></li>
+                <li><strong>Droit</strong><span>pour le corps, de la tête aux pieds</span></li>
+              </ul>
+              <p class="caption">La planche parfaite, figure emblème du collectif.</p>
+            </div>
+          </div>
+
+          <h3 class="ladder-title">Ce qu'on travaille</h3>
+          <p class="ladder-note">Chaque barre s'allonge avec la difficulté.</p>
+          <ul class="ladder">
+            <li style="--w:42%"><h4>Pompes et tractions</h4><p>Les bases de la poussée et du tirage.</p></li>
+            <li style="--w:56%"><h4>Gainage et jambes</h4><p>Un tronc stable et des appuis solides.</p></li>
+            <li style="--w:70%"><h4>Équilibres</h4><p>L-sit, équilibre sur les mains, contrôle du corps.</p></li>
+            <li style="--w:84%"><h4>Muscle-up et dips</h4><p>La force explosive aux barres.</p></li>
+            <li style="--w:100%"><h4>Planche</h4><p>Le corps complètement droit.</p></li>
           </ul>
         </div>
-        <div class="palette">
-          <div class="swatch s-red"><span class="chip"></span><p><strong>Rouge #5E0000</strong>La force et la détermination.</p></div>
-          <div class="swatch s-ivory"><span class="chip"></span><p><strong>Ivoire #F2E8DC</strong>L'équilibre et la simplicité.</p></div>
-          <div class="swatch s-char"><span class="chip"></span><p><strong>Noir charbon #242424</strong>L'univers urbain, les structures métalliques et les entraînements en extérieur.</p></div>
+      </section>
+
+      <!-- SECTION 2 : QUI SOMMES-NOUS -->
+      <section id="histoire" class="dark">
+        <div class="wrap">
+          <header class="section-head">
+            <h2>Qui sommes-nous</h2>
+            <p class="sub">Notre histoire.</p>
+          </header>
+          <div class="story-grid">
+            <div class="story-text">
+              <p>Armor Calistenics est un collectif lannionais de callisthénie, fondé par Matthieu Bayle et Antoine Gaborel.</p>
+              <p>Son nom est un jeu de mots entre Armor, la côte bretonne, et armure : se construire un corps solide. Le E de Calistenics, dessiné en trois barres, rappelle à la fois la Bretagne et les barres de traction.</p>
+              <p>Notre terrain, c'est la ville et ses structures métalliques. Notre rouge évoque la force et la détermination, notre ivoire l'équilibre et la simplicité.</p>
+            </div>
+            <ul class="founders">
+              <li><span class="role">Fondateur</span><strong>Matthieu Bayle</strong></li>
+              <li><span class="role">Fondateur</span><strong>Antoine Gaborel</strong></li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- SEANCES -->
-    <section id="seances" class="dark">
-      <div class="wrap">
-        <header class="section-head">
-          <h2>Rendez-vous au spot</h2>
-          <p class="sub">Entraînements en extérieur, sur les structures de la ville.</p>
-        </header>
-        <ul class="planning">
-          <li><span class="day">Mercredi</span><span class="time">18h30</span><span class="what">Séance technique : équilibres et figures</span></li>
-          <li><span class="day">Samedi</span><span class="time">10h00</span><span class="what">Séance de force : tirage, poussée, gainage</span></li>
-          <li><span class="day">Dimanche</span><span class="time">11h00</span><span class="what">Séance libre : on s'entraîne ensemble, on partage</span></li>
-        </ul>
-        <p class="note">Tous niveaux acceptés. Le lieu exact est communiqué à l'inscription.</p>
-        <a class="btn" href="#rejoindre">Rejoindre le collectif</a>
-      </div>
-    </section>
+      <!-- SECTION 3 : NOUS REJOINDRE -->
+      <section id="rejoindre" class="light">
+        <div class="wrap join-grid">
+          <header class="section-head">
+            <h2>Nous rejoindre</h2>
+            <p class="sub">Écris-nous, on te répond avec le prochain créneau.</p>
+            <p class="mail"><a href="mailto:armorcalistenics@gmail.com">armorcalistenics@gmail.com</a></p>
+            <p class="note">Tous niveaux acceptés. Les séances ont lieu en extérieur à Lannion.</p>
+          </header>
+          <form class="form" id="form" novalidate>
+            <label for="nom">Prénom</label>
+            <input id="nom" name="nom" type="text" autocomplete="given-name" required>
+            <label for="niveau">Ton niveau</label>
+            <select id="niveau" name="niveau">
+              <option>Je débute</option>
+              <option>Je m'entraîne déjà</option>
+              <option>Je suis confirmé</option>
+            </select>
+            <label for="msg">Message</label>
+            <textarea id="msg" name="msg" rows="4" required></textarea>
+            <p class="error" id="err" role="alert" hidden>Merci de renseigner ton prénom et un message.</p>
+            <button class="btn" type="submit">Rejoindre le collectif</button>
+          </form>
+        </div>
+      </section>
+    </main>
 
-    <!-- REJOINDRE -->
-    <section id="rejoindre" class="light">
-      <div class="wrap join-grid">
-        <header class="section-head">
-          <h2>Entre dans l'armure</h2>
-          <p class="sub">Écris-nous, on te répond avec le prochain créneau.</p>
-          <p class="mail"><a href="mailto:armorcalistenics@gmail.com">armorcalistenics@gmail.com</a></p>
-        </header>
-        <form class="form" id="form" novalidate>
-          <label for="nom">Prénom</label>
-          <input id="nom" name="nom" type="text" autocomplete="given-name" required>
-          <label for="niveau">Ton niveau</label>
-          <select id="niveau" name="niveau">
-            <option>Je débute</option>
-            <option>Je m'entraîne déjà</option>
-            <option>Je suis confirmé</option>
-          </select>
-          <label for="msg">Message</label>
-          <textarea id="msg" name="msg" rows="4" required></textarea>
-          <p class="error" id="err" role="alert" hidden>Merci de renseigner ton prénom et un message.</p>
-          <button class="btn" type="submit">Rejoindre le collectif</button>
-        </form>
+    <footer class="site-footer">
+      <div class="wrap foot-in">
+        <p>Armor Calistenics, collectif de callisthénie<br>Lannion, Côtes d'Armor</p>
+        <a href="mailto:armorcalistenics@gmail.com">armorcalistenics@gmail.com</a>
       </div>
-    </section>
-  </main>
-
-  <footer class="site-footer dark">
-    <div class="wrap foot-in">
-      <a class="logo" href="#accueil" aria-label="Retour en haut">
-        <span>ARMOR</span>
-        <span>CALIST<i class="e" aria-hidden="true"><b></b><b></b><b></b></i>NICS</span>
-      </a>
-      <p>Collectif de callisthénie, Lannion, Côtes d'Armor<br><a href="mailto:armorcalistenics@gmail.com">armorcalistenics@gmail.com</a></p>
-    </div>
-  </footer>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
