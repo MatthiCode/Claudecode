@@ -20,14 +20,18 @@
       <span>ARMOR</span>
       <span>CALIST<i class="e" aria-hidden="true"><b></b><b></b><b></b></i>NICS</span>
     </a>
-    <button class="burger" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
-    <nav id="menu" class="menu" aria-label="Navigation principale">
-      <a href="#discipline">La callisthénie</a>
-      <a href="#histoire">Qui sommes-nous</a>
-      <a href="#rejoindre">Nous rejoindre</a>
+    <div class="nav-actions">
       <a class="btn" href="#rejoindre">Rejoindre le collectif</a>
-    </nav>
+      <button class="burger" aria-expanded="false" aria-controls="menu"><span class="burger-label">Menu</span><span class="burger-icon" aria-hidden="true"><i></i><i></i><i></i></span></button>
+    </div>
   </header>
+
+  <nav id="menu" class="menu" aria-label="Navigation principale" hidden>
+    <a href="#accueil">Accueil</a>
+    <a href="#discipline">La callisthénie</a>
+    <a href="#histoire">Qui sommes nous</a>
+    <a href="#rejoindre">Nous rejoindre</a>
+  </nav>
 
   <div class="page">
     <!-- HEADER : photo + nom -->
