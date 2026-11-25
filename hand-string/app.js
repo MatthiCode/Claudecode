@@ -215,6 +215,7 @@ function loop(now) {
 /* ---------------- Démarrage ---------------- */
 document.getElementById("go").onclick = async () => {
   ac = new (window.AudioContext || window.webkitAudioContext)();
+  ac.resume();
   msg.textContent = "Chargement…";
   try {
     const stream = await navigator.mediaDevices.getUserMedia(
@@ -222,15 +223,16 @@ document.getElementById("go").onclick = async () => {
     video.srcObject = stream; await video.play();
     const files = await FilesetResolver.forVisionTasks(
       "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14/wasm");
-    landmarker = await HandLandmarker.createFromOptions(files, {
+    const make = delegate => HandLandmarker.createFromOptions(files, {
       baseOptions: { modelAssetPath:
         "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task",
-        delegate: "GPU" },
+        delegate },
       runningMode: "VIDEO", numHands: 2 });
+    try { landmarker = await make("GPU"); } catch { landmarker = await make("CPU"); }
     useCam = true;
   } catch (e) {
     console.warn(e);
-    alert("Caméra ou modèle indisponible : mode souris/doigt activé (glisse sur la corde).");
+    alert("Caméra ou modèle indisponible (" + (e && e.message || e) + ") : mode souris/doigt activé (glisse sur la corde).");
   }
   startEl.classList.add("hidden");
 };
